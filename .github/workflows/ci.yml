@@ -1,15 +1,12 @@
 name: Python CI
 
-name: Python CI
-
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
   schedule:
-    - cron: "0 0 * * *"  
-
+    - cron: "0 0 * * *"   # Exécution chaque nuit à 00:00 UTC
 
 jobs:
   test:

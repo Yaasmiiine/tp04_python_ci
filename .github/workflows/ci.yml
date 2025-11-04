@@ -1,13 +1,15 @@
 name: Python CI
 
+name: Python CI
+
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-  workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *"  
+
 
 jobs:
   test:
